@@ -1,0 +1,44 @@
+﻿<Window x:Class="CandidateManagement_DoanCongThanh.CandidateProfileWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CandidateManagement_DoanCongThanh"
+        mc:Ignorable="d"
+        Title="CandidateProfileWindow" Height="550" Width="800" WindowStartupLocation="CenterScreen"  Loaded="Window_Loaded">
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="#FFF4DFCC" Offset="0"/>
+                <GradientStop Color="#FFF1E9E2" Offset="0.794"/>
+                <GradientStop Color="#FFF3C297" Offset="1"/>
+                <GradientStop Color="#FFF7D5B6" Offset="0.309"/>
+                <GradientStop Color="#FFF4D5B8" Offset="0.484"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        <Label Content="CANDIDATE PROFILE MANAGEMENT" HorizontalAlignment="Center" Margin="0,36,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Foreground="#FFFF6500"/>
+        <Label x:Name="CandidateID" Content="Candidate ID" HorizontalAlignment="Left" Margin="75,102,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="FullName" Content="FullName" HorizontalAlignment="Left" Margin="75,144,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ImageURL" Content="ImageURL" HorizontalAlignment="Left" Margin="75,184,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="BirthDay" Content="BirthDay" HorizontalAlignment="Left" Margin="75,226,0,0" VerticalAlignment="Top"/>
+        <Label Content="JobPosting" HorizontalAlignment="Left" Margin="476,99,0,0" VerticalAlignment="Top"/>
+        <Label Content="Description" HorizontalAlignment="Left" Margin="476,144,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCandidateID" HorizontalAlignment="Left" Margin="179,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" Height="21"/>
+        <TextBox x:Name="txtFullName" HorizontalAlignment="Left" Margin="179,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" Height="20"/>
+        <TextBox x:Name="txtImageURL" HorizontalAlignment="Left" Margin="179,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261" Height="20"/>
+        <DatePicker x:Name="dateBrithDay" HorizontalAlignment="Left" Margin="179,226,0,0" VerticalAlignment="Top" Width="261" Height="28"/>
+        <ComboBox x:Name="cmbPostID" HorizontalAlignment="Left" Margin="560,104,0,0" VerticalAlignment="Top" Width="160" Height="21"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Margin="480,174,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="240" Height="80"/>
+        <DataGrid x:Name="dtgCandidateProflie" d:ItemsSource="{d:SampleData ItemCount=0}" Margin="80,268,70,115" SelectionChanged="dtgCandidateProflie_SelectionChanged" IsSynchronizedWithCurrentItem="False"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="81,464,0,0" VerticalAlignment="Top" Width="119" Height="40" Background="#FF66E566" BorderBrush="White" Click="btnAdd_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="250,464,0,0" VerticalAlignment="Top" Height="40" Width="120" Background="#FFF9DB1A" BorderBrush="White" Click="btnUpdate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="426,464,0,0" VerticalAlignment="Top" Height="40" Width="120" Background="#FFF70E0E" BorderBrush="White" Click="btnDelete_Click"/>
+        <Button x:Name="btnClose" Content="Close" HorizontalAlignment="Left" Margin="600,464,0,0" VerticalAlignment="Top" Height="40" Width="120" Background="#FF1A46F1" BorderBrush="White" Click="btnClose_Click"/>
+        <Button x:Name="btnMenu" Content="JobPosting Tranfer" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Height="34" Width="135" Click="btnMenu_Click" Background="Silver" Foreground="White"/>
+        <Button Content="Logout" HorizontalAlignment="Left" Margin="720,10,0,0" VerticalAlignment="Top" Height="34" Width="60" Background="Salmon" Foreground="White" Click="Logout_Click"/>
+
+    </Grid>
+</Window>
