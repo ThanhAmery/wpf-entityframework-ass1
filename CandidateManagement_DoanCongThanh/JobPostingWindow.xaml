@@ -8,7 +8,6 @@
         Title="JobPostingWindow" Height="650" Width="850" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
     <Grid>
 
-
         <Grid>
 
             <Grid.Background>
@@ -58,7 +57,6 @@
 
             <Button x:Name="btnClose" Content="Close" Grid.Column="3" HorizontalAlignment="Left" Margin="499,302,0,81" Grid.Row="5" Width="120" Background="#FFEF8F18" Foreground="White" Click="btnClose_Click"/>
             <Button x:Name="btnMenu" Content="Candidate Profile" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Silver" Foreground="White" Click="btnMenu_Click" Height="28" Width="105"/>
-
 
         </Grid>
 
