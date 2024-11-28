@@ -17,8 +17,6 @@ namespace Candidate_Services
             jobPostingRepo = new JobPostingRepo();
         }
 
-        
-
         public List<JobPosting> GetJobPostings()
         {
             return jobPostingRepo.GetJobPostings();
